@@ -1,4 +1,4 @@
-# Supported model providers for Agent Zero
+# Supported model providers for Project Zero
 # ---------------------------------------
 #
 # Each provider type ("chat", "embedding") contains a mapping of provider IDs
@@ -18,10 +18,10 @@
 
 chat:
   a0_venice:
-    name: Agent Zero API
+    name: Project Zero API
     litellm_provider: openai
     kwargs:
-      api_base: https://llm.agent-zero.ai/v1
+      api_base: https://llm.project-zero.ai/v1
       venice_parameters:
         include_venice_system_prompt: false
   anthropic:
@@ -76,8 +76,8 @@ chat:
     litellm_provider: openrouter
     kwargs:
       extra_headers:
-        "HTTP-Referer": "https://agent-zero.ai/"
-        "X-Title": "Agent Zero"
+        "HTTP-Referer": "https://project-zero.ai/"
+        "X-Title": "Project Zero"
   sambanova:
     name: Sambanova
     litellm_provider: sambanova
@@ -137,8 +137,8 @@ embedding:
     kwargs:
       api_base: https://openrouter.ai/api/v1
       extra_headers:
-        "HTTP-Referer": "https://agent-zero.ai/"
-        "X-Title": "Agent Zero"
+        "HTTP-Referer": "https://project-zero.ai/"
+        "X-Title": "Project Zero"
   other:
     name: Other OpenAI compatible
     litellm_provider: openai

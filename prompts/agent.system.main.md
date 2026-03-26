@@ -1,4 +1,4 @@
-# Agent Zero System Manual
+# Project Zero System Manual
 
 {{ include "agent.system.main.role.md" }}
 

@@ -1,8 +1,8 @@
 services:
-  agent-zero:
-    container_name: agent-zero
-    image: agent0ai/agent-zero:latest
+  project-zero:
+    container_name: project-zero
+    image: CharAznableX/project-zero:latest
     volumes:
-      - ./agent-zero:/a0
+      - ./project-zero:/a0
     ports:
       - "50080:80"
